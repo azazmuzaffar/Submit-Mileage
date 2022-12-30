@@ -27,6 +27,10 @@ body {
     line-height: 1.27;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .container,
 .container-fluid {
     padding: 0px 30px;
@@ -457,7 +461,7 @@ main {
     }
 
     &-value {
-        transition: 1s all ease;
+        animation: load 4s 1;
         border-radius: 100px;
         background: $white;
         height: 30px;
@@ -467,6 +471,17 @@ main {
         justify-content: center;
         font-size: 14px;
         font-weight: 600;
+        width: 100%;
+    }
+
+    @keyframes load {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
     }
 }
 

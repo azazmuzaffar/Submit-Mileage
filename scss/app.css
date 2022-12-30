@@ -16,6 +16,10 @@ body {
   line-height: 1.27;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .container,
 .container-fluid {
   padding: 0px 30px;
@@ -401,7 +405,8 @@ main {
   display: flex;
 }
 .progress-value {
-  transition: 1s all ease;
+  -webkit-animation: load 4s 1;
+          animation: load 4s 1;
   border-radius: 100px;
   background: #fff;
   height: 30px;
@@ -411,6 +416,23 @@ main {
   justify-content: center;
   font-size: 14px;
   font-weight: 600;
+  width: 100%;
+}
+@-webkit-keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /*-----------------------------*/

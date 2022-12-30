@@ -13,6 +13,9 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
+    <!-- >>> AOS animation v2.3.1<<< -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" media="all" />
 
@@ -63,13 +66,13 @@
         <!-- All the credentials required -->
         <form action="">
           <div class="row">
-            <div class="col-lg-4 col-md-6 input-control">
+            <div class="col-lg-4 col-md-6 input-control" data-aos="fade-up" data-aos-delay="600">
               <label for="">Your Name</label>
               <input id="name" placeholder="Your Name" type="text" autofocus />
               <!-- Error Message will show here with the .show class added to it -->
               <span class="error-message show">The error message will show here...</span>
             </div>
-            <div class="col-lg-4 col-md-6 input-control">
+            <div class="col-lg-4 col-md-6 input-control" data-aos="fade-up" data-aos-delay="600">
               <label for="">PIN</label>
               <div class="input-has-icon">
                 <input id="pin" placeholder="PIN" type="number" />
@@ -88,7 +91,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 input-control">
+            <div class="col-lg-4 col-md-6 input-control" data-aos="fade-up" data-aos-delay="600">
               <label for="">BIB</label>
               <div class="input-has-icon">
                 <input id="bib" placeholder="BIB" type="number" />
@@ -107,28 +110,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 input-control">
+            <div class="col-lg-4 col-md-6 input-control" data-aos="fade-up" data-aos-delay="900">
               <label for="">Date</label>
               <input id="date" placeholder="Date (DD/MM/YYYY)" type="date" />
             </div>
-            <div class="col-lg-4 col-md-6 input-control">
+            <div class="col-lg-4 col-md-6 input-control" data-aos="fade-up" data-aos-delay="900">
               <label for="">Ditsance in <sup>KM</sup></label>
               <input id="mileage" placeholder="Distance" type="number" />
             </div>
-            <div class="col-lg-4 col-md-6 input-control">
+            <div class="col-lg-4 col-md-6 input-control" data-aos="fade-up" data-aos-delay="900">
               <label for="">Miles or KM</label>
               <select name="mileskm" id="mileskm">
                 <option value="Miles">Miles</option>
                 <option value="Kms">Kms</option>
               </select>
             </div>
-            <div class="col-lg-6 col-md-12 input-control">
+            <div class="col-lg-6 col-md-12 input-control" data-aos="fade-up" data-aos-delay="1100">
               <div class="input-group control-fileupload pt-3">
                 <label class="input-group-text" for="file">Choose File</label>
                 <input id="file" type="file" class="form-control" accept="image/*,pdf,application/pdf,.gps,.gpx" />
               </div>
             </div>
-            <div class="col-md-12 input-control text-center">
+            <div class="col-md-12 input-control text-center" data-aos="fade-up" data-aos-delay="1200">
               <div class="line"></div>
               <button class="btn btn-primary btn-has-width" onclick="formSubmit()" type="button">Submit</button>
             </div>
@@ -140,7 +143,7 @@
           <!-- Filters -->
           <div class="filters mb-4">
             <div class="row">
-              <div class="col-md-6 input-control">
+              <div class="col-md-6 input-control" data-aos="fade-up" data-aos-delay="1400">
                 <select id="custom-select" style="display: none">
                   <option selected>500 Miles</option>
                   <option value="500-miles">500 Miles</option>
@@ -153,7 +156,7 @@
 
                 <!-- Please shift the fuctionality to this Nice Select -->
                 <!-- just need to filter the table on li click -->
-                <div class="nice-select" tabindex="0">
+                <div class="nice-select" tabindex="0" data-aos="fade-up" data-aos-delay="1400">
                   <span class="current">500 Miles</span>
                   <ul class="list">
                     <li class="option selected">500 Miles</li>
@@ -166,7 +169,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6 input-control">
+              <div class="col-md-6 input-control" data-aos="fade-up" data-aos-delay="1400">
                 <div>
                   <input id="myInput" onkeyup="searchFilter()" placeholder="Search" type="text" />
                 </div>
@@ -177,12 +180,12 @@
           <!-- Progress Bar .show class is responsible for showing the progress bar, 
              you can just remove it and and add on click 
           -->
-          <div class="progress show">
-            <div class="progress-value" style="width: 95%">95%</div>
+          <div class="progress show" data-aos="fade-up" data-aos-delay="1700">
+            <div class="progress-value" style="max-width: 95%">95%</div>
           </div>
 
           <!-- Table-->
-          <div id="leaderboard" class="table-responsive mt-5"></div>
+          <div id="leaderboard" class="table-responsive mt-5" data-aos="fade-up" data-aos-delay="2200"></div>
         </div>
 
         <!-- Modal -->
@@ -219,9 +222,13 @@
   <!-- >>>>>> Bootbox.js v6.0.0 <<<<<<< -->
   <script src="./bootbox.js/bootbox.min.js"></script>
 
+  <!-- >>> AOS animation v2.3.1 <<< -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
     $(document).ready(function () {
       $("select").niceSelect();
+      AOS.init();
     });
   </script>
 

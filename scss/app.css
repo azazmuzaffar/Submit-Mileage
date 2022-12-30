@@ -195,6 +195,12 @@ input[type=file]::file-selector-button {
   display: block;
   padding-top: 10px;
 }
+@media screen and (max-width: 767px) {
+  .input-control .error-message.show {
+    font-size: 12px;
+    padding-top: 7px;
+  }
+}
 
 /* If Input has icon */
 .input-has-icon {
@@ -231,6 +237,13 @@ input[type=file]::file-selector-button {
   visibility: hidden;
   opacity: 0;
 }
+@media screen and (max-width: 576px) {
+  .input-has-icon ._tooltip span {
+    left: auto;
+    right: 0px;
+    transform: unset;
+  }
+}
 .input-has-icon ._tooltip span:after {
   position: absolute;
   top: 100%;
@@ -240,6 +253,13 @@ input[type=file]::file-selector-button {
   border-top: 11px solid #F5832F;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
+}
+@media screen and (max-width: 576px) {
+  .input-has-icon ._tooltip span:after {
+    left: auto;
+    right: 15px;
+    transform: unset;
+  }
 }
 .input-has-icon ._tooltip .icon-wrapper:hover + span {
   visibility: visible;

@@ -210,6 +210,11 @@ input[type="file"] {
         &.show {
             display: block;
             padding-top: 10px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 12px;
+                padding-top: 7px;
+            }
         }
     }
 }
@@ -252,11 +257,23 @@ input[type="file"] {
             visibility: hidden;
             opacity: 0;
 
+            @media screen and (max-width: 576px) {
+                left: auto;
+                right: 0px;
+                transform: unset;
+            }
+
             &:after {
                 position: absolute;
                 top: 100%;
                 left: 50%;
                 transform: translateX(-50%);
+
+                @media screen and (max-width: 576px) {
+                    left: auto;
+                    right: 15px;
+                    transform: unset;
+                }
 
                 content: '';
                 border-top: 11px solid $orange;

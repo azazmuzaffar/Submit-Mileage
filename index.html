@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content=" width=device-width, initial-scale=1" name="viewport" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+    <!-- >>> Title & Favicon <<< -->
+    <title>2023</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
+
+    <!-- >>> meta Description & Keywords <<< -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- >>> Bootstrap v5.0.2 | Front End Framework <<< -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" media="all" />
+
+    <!-- >>> Nice Select <<< -->
+    <link rel="stylesheet" href="./nice-select/css/nice-select.css" />
+
+    <!-- >>> Custom CSS <<< -->
+    <link rel="stylesheet" href="./scss/app.css" />
+  </head>
+  <body id="body">
+    <!-- Site Header -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="navbar-left">
+          <h2>SUBMIT <span>MILEAGE</span></h2>
+        </div>
+        <div class="navbar-right ml-auto">
+          <svg onclick="checkLogPre()" fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 548.291 548.291" xml:space="preserve">
+            <g>
+              <path
+                d="M486.201,196.124h-13.166V132.59c0-0.396-0.062-0.795-0.115-1.196c-0.021-2.523-0.825-5-2.552-6.963L364.657,3.677
+               c-0.033-0.031-0.064-0.042-0.085-0.073c-0.63-0.707-1.364-1.292-2.143-1.795c-0.229-0.157-0.461-0.286-0.702-0.421
+               c-0.672-0.366-1.387-0.671-2.121-0.892c-0.2-0.055-0.379-0.136-0.577-0.188C358.23,0.118,357.401,0,356.562,0H96.757
+               C84.894,0,75.256,9.651,75.256,21.502v174.613H62.092c-16.971,0-30.732,13.756-30.732,30.733v159.812
+               c0,16.968,13.761,30.731,30.732,30.731h13.164V526.79c0,11.854,9.638,21.501,21.501,21.501h354.776
+               c11.853,0,21.501-9.647,21.501-21.501V417.392h13.166c16.966,0,30.729-13.764,30.729-30.731V226.854
+               C516.93,209.872,503.167,196.124,486.201,196.124z M96.757,21.502h249.054v110.009c0,5.939,4.817,10.75,10.751,10.75h94.972v53.861
+               H96.757V21.502z M317.816,303.427c0,47.77-28.973,76.746-71.558,76.746c-43.234,0-68.531-32.641-68.531-74.152
+               c0-43.679,27.887-76.319,70.906-76.319C293.389,229.702,317.816,263.213,317.816,303.427z M82.153,377.79V232.085h33.073v118.039
+               h57.944v27.66H82.153V377.79z M451.534,520.962H96.757v-103.57h354.776V520.962z M461.176,371.092
+               c-10.162,3.454-29.402,8.209-48.641,8.209c-26.589,0-45.833-6.698-59.24-19.664c-13.396-12.535-20.75-31.568-20.529-52.967
+               c0.214-48.436,35.448-76.108,83.229-76.108c18.814,0,33.292,3.688,40.431,7.139l-6.92,26.37
+               c-7.999-3.457-17.942-6.268-33.942-6.268c-27.449,0-48.209,15.567-48.209,47.134c0,30.049,18.807,47.771,45.831,47.771
+               c7.564,0,13.623-0.852,16.21-2.152v-30.488h-22.478v-25.723h54.258V371.092L461.176,371.092z"
+              />
+              <path
+                d="M212.533,305.37c0,28.535,13.407,48.64,35.452,48.64c22.268,0,35.021-21.186,35.021-49.5
+               c0-26.153-12.539-48.655-35.237-48.655C225.504,255.854,212.533,277.047,212.533,305.37z"
+              />
+            </g>
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- All the credentials required -->
+        <form action="">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 input-control">
+              <label for="">Your Name</label>
+              <input id="name" placeholder="Your Name" type="text" autofocus />
+              <!-- Error Message will show here with the .show class added to it -->
+              <span class="error-message show">The error message will show here...</span>
+            </div>
+            <div class="col-lg-4 col-md-6 input-control">
+              <label for="">PIN</label>
+              <div class="input-has-icon">
+                <input id="pin" placeholder="PIN" type="number" />
+                <div class="_tooltip">
+                  <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                      <g id="Group_30" data-name="Group 30" transform="translate(-322 -188)">
+                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="11" cy="11" r="11" transform="translate(322 188)" fill="#f37d2f" />
+                        <text id="_" data-name="?" transform="translate(333 205)" fill="#fff" font-size="15" font-family="Lato-Bold, Lato" font-weight="700">
+                          <tspan x="-3.154" y="0">?</tspan>
+                        </text>
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="tooltip-text">3 Digit PIN with no Alpha etc...</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 input-control">
+              <label for="">BIB</label>
+              <div class="input-has-icon">
+                <input id="bib" placeholder="BIB" type="number" />
+                <div class="_tooltip">
+                  <div class="icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                      <g id="Group_30" data-name="Group 30" transform="translate(-322 -188)">
+                        <circle id="Ellipse_2" data-name="Ellipse 2" cx="11" cy="11" r="11" transform="translate(322 188)" fill="#f37d2f" />
+                        <text id="_" data-name="?" transform="translate(333 205)" fill="#fff" font-size="15" font-family="Lato-Bold, Lato" font-weight="700">
+                          <tspan x="-3.154" y="0">?</tspan>
+                        </text>
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="tooltip-text">Tooltip Message</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 input-control">
+              <label for="">Date</label>
+              <input id="date" placeholder="Date (DD/MM/YYYY)" type="date" />
+            </div>
+            <div class="col-lg-4 col-md-6 input-control">
+              <label for="">Ditsance in <sup>KM</sup></label>
+              <input id="mileage" placeholder="Distance" type="number" />
+            </div>
+            <div class="col-lg-4 col-md-6 input-control">
+              <label for="">Miles or KM</label>
+              <select name="mileskm" id="mileskm">
+                <option value="Miles">Miles</option>
+                <option value="Kms">Kms</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-12 input-control">
+              <div class="input-group control-fileupload pt-3">
+                <label class="input-group-text" for="file">Choose File</label>
+                <input id="file" type="file" class="form-control" accept="image/*,pdf,application/pdf,.gps,.gpx" />
+              </div>
+            </div>
+            <div class="col-md-12 input-control text-center">
+              <div class="line"></div>
+              <button class="btn btn-primary btn-has-width" onclick="formSubmit()" type="button">Submit</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Additional Info -->
+        <div class="other-details pt-5">
+          <!-- Filters -->
+          <div class="filters mb-4">
+            <div class="row">
+              <div class="col-md-6 input-control">
+                <select id="custom-select" style="display: none">
+                  <option selected>500 Miles</option>
+                  <option value="500-miles">500 Miles</option>
+                  <option value="500-km">500 Kms</option>
+                  <option value="1000-miles">1000 Miles</option>
+                  <option value="1000-km">1000 Kms</option>
+                  <option value="2023-miles">2023 Miles</option>
+                  <option value="2023-km">2023 Kms</option>
+                </select>
+
+                <!-- Please shift the fuctionality to this Nice Select -->
+                <!-- just need to filter the table on li click -->
+                <div class="nice-select" tabindex="0">
+                  <span class="current">500 Miles</span>
+                  <ul class="list">
+                    <li class="option selected">500 Miles</li>
+                    <li class="option" data-value="500-miles">500 Miles</li>
+                    <li class="option" data-value="500-km">500 Kms</li>
+                    <li class="option" data-value="1000-miles">1000 Miles</li>
+                    <li class="option" data-value="1000-km">1000 Kms</li>
+                    <li class="option" data-value="2023-miles">2023 Miles</li>
+                    <li class="option" data-value="2023-km">2023 Kms</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 input-control">
+                <div>
+                  <input id="myInput" onkeyup="searchFilter()" placeholder="Search" type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress Bar .show class is responsible for showing the progress bar, 
+             you can just remove it and and add on click 
+          -->
+          <div class="progress show">
+            <div class="progress-value" style="width: 95%">95%</div>
+          </div>
+
+          <!-- Table-->
+          <div id="leaderboard" class="table-responsive mt-5"></div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mileage Log</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="exampleModalBody">...</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <!-- >>>>>> jQuery v3.3.1 <<<<<<< -->
+  <script src="./jquery/jquery.min.js"></script>
+
+  <!-- >>>>>> Bootstrap v5.0.2 <<<<<<< -->
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- >>> Nice Select <<< -->
+  <script src="./nice-select/js/jquery.nice-select.min.js"></script>
+
+  <!-- >>>>>> jQuery LoadingOverlay v2.1.7 <<<<<<< -->
+  <script src="./jquery/jquery-loadingoverlay.min.js"></script>
+
+  <!-- >>>>>> Bootbox.js v6.0.0 <<<<<<< -->
+  <script src="./bootbox.js/bootbox.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("select").niceSelect();
+    });
+  </script>
+
+  <!-- >>>>>> Custom Script <<<<<<< -->
+  <script src="./js/script.js"></script>
+
+  <!-- >>>>>> Firebase <<<<<<< -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+  <!-- >>>>>> Custom Script <<<<<<< -->
+  <script src="./js/app.js"></script>
+</html>

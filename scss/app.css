@@ -8,6 +8,8 @@
 /*-----------------------------*/
 /* ------- Generic CSS -------- */
 /*-----------------------------*/
+/* Functions to encode the SVG as per the theme colors  */
+/* Encoded SVGS */
 body {
   overflow-x: hidden;
   font-family: "Montserrat";
@@ -40,10 +42,10 @@ table.table > :not(:last-child) > :last-child > * {
 }
 table tr th {
   text-transform: uppercase;
-  color: #F5832F;
+  color: #bb009c;
 }
 table tr:nth-child(even) {
-  background: rgba(245, 131, 47, 0.09) !important;
+  background: rgba(187, 0, 156, 0.09) !important;
 }
 table tr:nth-child(odd) {
   background: #fff !important;
@@ -108,7 +110,7 @@ input[type=date] {
 
 input[type=date]::-webkit-calendar-picker-indicator,
 #picker::-webkit-calendar-picker-indicator {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44.8' height='48' viewBox='0 0 44.8 48'%3E%3Cg id='Group_6653' data-name='Group 6653' transform='translate(-185 -263)'%3E%3Crect id='Rectangle_10' data-name='Rectangle 10' width='44.8' height='48' rx='10' transform='translate(185 263)' fill='%23f37d2f'/%3E%3Cg id='calendar' transform='translate(191.809 272.526)'%3E%3Cpath id='Path_28' data-name='Path 28' d='M27.911 1.884h-3.3V.471A.471.471 0 0 0 24.142 0h-3.3a.471.471 0 0 0-.471.471V1.884H10.009V.471A.471.471 0 0 0 9.538 0H6.24a.471.471 0 0 0-.471.471V1.884h-3.3A.471.471 0 0 0 2 2.356V27.8a.471.471 0 0 0 .471.471h25.44a.471.471 0 0 0 .471-.471V2.356A.471.471 0 0 0 27.911 1.884Zm-6.6-.942h2.356V3.769H21.315V.942Zm-14.6 0H9.067V3.769H6.711V.942ZM2.942 2.827H5.769V4.24a.471.471 0 0 0 .471.471h3.3a.471.471 0 0 0 .471-.471V2.827H20.373V4.24a.471.471 0 0 0 .471.471h3.3a.471.471 0 0 0 .471-.471V2.827H27.44v4.24H2.942Zm0 24.5V8.009h24.5V27.324Z' fill='%23fff'/%3E%3Cpath id='Path_29' data-name='Path 29' d='M23.72 23H11V36.662H28.9V23H23.72Zm-3.3.942h3.3v3.3h-3.3Zm3.3 7.538h-3.3v-3.3h3.3Zm-7.538-3.3h3.3v3.3h-3.3Zm0-4.24h3.3v3.3h-3.3Zm-4.24 0h3.3v3.3h-3.3Zm0 4.24h3.3v3.3h-3.3Zm3.3 7.538h-3.3v-3.3h3.3Zm4.24 0h-3.3v-3.3h3.3Zm4.24 0h-3.3v-3.3h3.3Zm4.24 0h-3.3v-3.3h3.3Zm0-4.24h-3.3v-3.3h3.3Zm0-7.538v3.3h-3.3v-3.3Z' transform='translate(-4.76 -12.165)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cg id='Group_6655' data-name='Group 6655' transform='translate(-181 -259)'%3E%3Cg id='Group_6654' data-name='Group 6654'%3E%3Crect id='Rectangle_10' data-name='Rectangle 10' width='50' height='50' rx='10' transform='translate(181 259)' fill='%23bb009c' /%3E%3C/g%3E%3Cg id='calendar' transform='translate(190.809 270.526)'%3E%3Cpath id='Path_28' data-name='Path 28' d='M27.911,1.884h-3.3V.471A.471.471,0,0,0,24.142,0h-3.3a.471.471,0,0,0-.471.471V1.884H10.009V.471A.471.471,0,0,0,9.538,0H6.24a.471.471,0,0,0-.471.471V1.884h-3.3A.471.471,0,0,0,2,2.356V27.8a.471.471,0,0,0,.471.471h25.44a.471.471,0,0,0,.471-.471V2.356A.471.471,0,0,0,27.911,1.884Zm-6.6-.942h2.356V3.769H21.315V.942Zm-14.6,0H9.067V3.769H6.711V.942ZM2.942,2.827H5.769V4.24a.471.471,0,0,0,.471.471h3.3a.471.471,0,0,0,.471-.471V2.827H20.373V4.24a.471.471,0,0,0,.471.471h3.3a.471.471,0,0,0,.471-.471V2.827H27.44v4.24H2.942Zm0,24.5V8.009h24.5V27.324Z' transform='translate(0 -1)' fill='%23fff' /%3E%3Cpath id='Path_29' data-name='Path 29' d='M23.72,23H11V36.662H28.9V23H23.72Zm-3.3.942h3.3v3.3h-3.3Zm3.3,7.538h-3.3v-3.3h3.3Zm-7.538-3.3h3.3v3.3h-3.3Zm0-4.24h3.3v3.3h-3.3Zm-4.24,0h3.3v3.3h-3.3Zm0,4.24h3.3v3.3h-3.3Zm3.3,7.538h-3.3v-3.3h3.3Zm4.24,0h-3.3v-3.3h3.3Zm4.24,0h-3.3v-3.3h3.3Zm4.24,0h-3.3v-3.3h3.3Zm0-4.24h-3.3v-3.3h3.3Zm0-7.538v3.3h-3.3v-3.3Z' transform='translate(-4.76 -13.165)' fill='%23fff' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   cursor: pointer;
   position: absolute;
   width: 50px;
@@ -121,7 +123,7 @@ input[type=date]::-webkit-calendar-picker-indicator,
 }
 
 input[type=date]::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44.8' height='48' viewBox='0 0 44.8 48'%3E%3Cg id='Group_6653' data-name='Group 6653' transform='translate(-185 -263)'%3E%3Crect id='Rectangle_10' data-name='Rectangle 10' width='44.8' height='48' rx='10' transform='translate(185 263)' fill='%23f37d2f'/%3E%3Cg id='calendar' transform='translate(191.809 272.526)'%3E%3Cpath id='Path_28' data-name='Path 28' d='M27.911 1.884h-3.3V.471A.471.471 0 0 0 24.142 0h-3.3a.471.471 0 0 0-.471.471V1.884H10.009V.471A.471.471 0 0 0 9.538 0H6.24a.471.471 0 0 0-.471.471V1.884h-3.3A.471.471 0 0 0 2 2.356V27.8a.471.471 0 0 0 .471.471h25.44a.471.471 0 0 0 .471-.471V2.356A.471.471 0 0 0 27.911 1.884Zm-6.6-.942h2.356V3.769H21.315V.942Zm-14.6 0H9.067V3.769H6.711V.942ZM2.942 2.827H5.769V4.24a.471.471 0 0 0 .471.471h3.3a.471.471 0 0 0 .471-.471V2.827H20.373V4.24a.471.471 0 0 0 .471.471h3.3a.471.471 0 0 0 .471-.471V2.827H27.44v4.24H2.942Zm0 24.5V8.009h24.5V27.324Z' fill='%23fff'/%3E%3Cpath id='Path_29' data-name='Path 29' d='M23.72 23H11V36.662H28.9V23H23.72Zm-3.3.942h3.3v3.3h-3.3Zm3.3 7.538h-3.3v-3.3h3.3Zm-7.538-3.3h3.3v3.3h-3.3Zm0-4.24h3.3v3.3h-3.3Zm-4.24 0h3.3v3.3h-3.3Zm0 4.24h3.3v3.3h-3.3Zm3.3 7.538h-3.3v-3.3h3.3Zm4.24 0h-3.3v-3.3h3.3Zm4.24 0h-3.3v-3.3h3.3Zm4.24 0h-3.3v-3.3h3.3Zm0-4.24h-3.3v-3.3h3.3Zm0-7.538v3.3h-3.3v-3.3Z' transform='translate(-4.76 -12.165)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cg id='Group_6655' data-name='Group 6655' transform='translate(-181 -259)'%3E%3Cg id='Group_6654' data-name='Group 6654'%3E%3Crect id='Rectangle_10' data-name='Rectangle 10' width='50' height='50' rx='10' transform='translate(181 259)' fill='%23bb009c' /%3E%3C/g%3E%3Cg id='calendar' transform='translate(190.809 270.526)'%3E%3Cpath id='Path_28' data-name='Path 28' d='M27.911,1.884h-3.3V.471A.471.471,0,0,0,24.142,0h-3.3a.471.471,0,0,0-.471.471V1.884H10.009V.471A.471.471,0,0,0,9.538,0H6.24a.471.471,0,0,0-.471.471V1.884h-3.3A.471.471,0,0,0,2,2.356V27.8a.471.471,0,0,0,.471.471h25.44a.471.471,0,0,0,.471-.471V2.356A.471.471,0,0,0,27.911,1.884Zm-6.6-.942h2.356V3.769H21.315V.942Zm-14.6,0H9.067V3.769H6.711V.942ZM2.942,2.827H5.769V4.24a.471.471,0,0,0,.471.471h3.3a.471.471,0,0,0,.471-.471V2.827H20.373V4.24a.471.471,0,0,0,.471.471h3.3a.471.471,0,0,0,.471-.471V2.827H27.44v4.24H2.942Zm0,24.5V8.009h24.5V27.324Z' transform='translate(0 -1)' fill='%23fff' /%3E%3Cpath id='Path_29' data-name='Path 29' d='M23.72,23H11V36.662H28.9V23H23.72Zm-3.3.942h3.3v3.3h-3.3Zm3.3,7.538h-3.3v-3.3h3.3Zm-7.538-3.3h3.3v3.3h-3.3Zm0-4.24h3.3v3.3h-3.3Zm-4.24,0h3.3v3.3h-3.3Zm0,4.24h3.3v3.3h-3.3Zm3.3,7.538h-3.3v-3.3h3.3Zm4.24,0h-3.3v-3.3h3.3Zm4.24,0h-3.3v-3.3h3.3Zm4.24,0h-3.3v-3.3h3.3Zm0-4.24h-3.3v-3.3h3.3Zm0-7.538v3.3h-3.3v-3.3Z' transform='translate(-4.76 -13.165)' fill='%23fff' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   cursor: pointer;
   position: absolute;
   pointer-events: none;
@@ -174,15 +176,15 @@ input[type=file]::file-selector-button {
   text-transform: uppercase;
   padding-left: 7px;
   margin-bottom: 5px;
-  color: #F5832F;
+  color: #bb009c;
 }
 .input-control label.input-group-text {
   margin-bottom: 0px;
   cursor: pointer;
   color: #fff;
-  border: 1px solid #F5832F;
+  border: 1px solid #bb009c;
   border-radius: 25px;
-  background-color: #F5832F;
+  background-color: #bb009c;
   text-transform: inherit;
   font-weight: 600;
   text-align: center;
@@ -214,6 +216,7 @@ input[type=file]::file-selector-button {
 .input-has-icon .icon-wrapper {
   position: relative;
   cursor: pointer;
+  color: #bb009c;
 }
 .input-has-icon ._tooltip {
   list-style-type: none;
@@ -251,7 +254,7 @@ input[type=file]::file-selector-button {
   left: 50%;
   transform: translateX(-50%);
   content: "";
-  border-top: 11px solid #F5832F;
+  border-top: 11px solid #bb009c;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
 }
@@ -290,25 +293,25 @@ input[type=file]::file-selector-button {
   max-width: 300px;
 }
 .btn-primary {
-  background: #F5832F;
-  border: 1px solid #F5832F;
+  background: #bb009c;
+  border: 1px solid #bb009c;
   color: #fff;
   text-align: center;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
   background: #fff;
-  border: 1px solid #F5832F;
-  color: #F5832F;
+  border: 1px solid #bb009c;
+  color: #bb009c;
   box-shadow: none;
 }
 .btn-secondary {
   background: #fff;
-  border: 1px solid #F5832F;
-  color: #F5832F;
+  border: 1px solid #bb009c;
+  color: #bb009c;
   text-align: center;
 }
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary:active:focus {
-  background: #F5832F;
+  background: #bb009c;
   border: 1px solid #fff;
   color: #fff;
   box-shadow: none;
@@ -334,7 +337,7 @@ input[type=file]::file-selector-button {
   color: #505050;
   background: #fff;
   border: 0px;
-  border-radius: 0 px;
+  border-radius: 0px;
 }
 .nice-select:hover, .nice-select:focus {
   box-shadow: 0 0 10px rgb(235, 235, 235);
@@ -344,7 +347,8 @@ input[type=file]::file-selector-button {
 }
 .nice-select::before {
   content: "";
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5.968' viewBox='0 0 10 5.968'%3E%3Cpath id='Chevron_down' data-name='Chevron down' d='M9.665 1.825 5.843 5.645a1.06 1.06 0 0 1-.863.3 1.063 1.063 0 0 1-.864-.3L.3 1.825A1.081 1.081 0 0 1 1.825.3L4.981 3.452 8.136.3A1.081 1.081 0 0 1 9.665 1.825Z' transform='translate(0.019 0.02)' fill='%23f37d2f' fill-rule='evenodd'/%3E%3C/svg%3E");
+  color: red;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5.968' viewBox='0 0 10 5.968'%3E%3Cpath id='Chevron_down' data-name='Chevron down' d='M9.665,1.825,5.843,5.645a1.06,1.06,0,0,1-.863.3,1.063,1.063,0,0,1-.864-.3L.3,1.825A1.081,1.081,0,0,1,1.825.3L4.981,3.452,8.136.3A1.081,1.081,0,0,1,9.665,1.825Z' transform='translate(0.019 0.02)' fill='%23bb009c' fill-rule='evenodd'/%3E%3C/svg%3E");
   background-size: 10px 6px;
   display: block;
   position: absolute;
@@ -408,7 +412,7 @@ main {
 /* ------- Progress bar ------- */
 /*-----------------------------*/
 .progress {
-  background: #F5832F;
+  background: #bb009c;
   justify-content: flex-start;
   border-radius: 100px;
   align-items: center;
@@ -427,7 +431,7 @@ main {
   border-radius: 100px;
   background: #fff;
   height: 32px;
-  color: #F5832F;
+  color: #bb009c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -506,11 +510,11 @@ main {
   }
 }
 .site-header .navbar-left h2 span {
-  color: #F5832F;
+  color: #bb009c;
 }
 .site-header .navbar-right svg {
   cursor: pointer;
-  color: #F5832F;
+  color: #bb009c;
 }
 
 /*-----------------------------*/
@@ -546,7 +550,7 @@ main {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
-  color: #F5832F;
+  color: #bb009c;
 }
 .modal-footer {
   display: flex;

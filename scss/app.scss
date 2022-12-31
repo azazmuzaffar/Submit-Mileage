@@ -61,7 +61,7 @@ table {
         }
 
         &:nth-child(even) {
-            background: $lightGray !important;
+            background: rgba($orange, 0.09) !important;
         }
 
         &:nth-child(odd) {

@@ -43,7 +43,7 @@ table tr th {
   color: #F5832F;
 }
 table tr:nth-child(even) {
-  background: #efefef !important;
+  background: rgba(245, 131, 47, 0.09) !important;
 }
 table tr:nth-child(odd) {
   background: #fff !important;

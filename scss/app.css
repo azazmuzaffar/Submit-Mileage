@@ -422,7 +422,8 @@ main {
   display: flex;
 }
 .progress-value {
-  transition: 1s all ease;
+  -webkit-animation: load 1s 1;
+          animation: load 1s 1;
   border-radius: 100px;
   background: #fff;
   height: 32px;
@@ -432,6 +433,23 @@ main {
   justify-content: center;
   font-size: 14px;
   font-weight: 600;
+  width: 100%;
+}
+@-webkit-keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /*-----------------------------*/

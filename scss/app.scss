@@ -18,7 +18,7 @@ $lightGray: #efefef;
 $lightBlack: #505050;
 $black: #000;
 
-$orange: #bb009c;
+$orange: #f06400;
 $bg: rgb(246, 246, 246);
 
 
@@ -554,7 +554,7 @@ main {
     padding: 35px 40px 25px;
     border-radius: 12px;
     background: $white;
-    box-shadow: 0 0 16px rgb(243, 243, 243);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.0066);
 
     @media screen and (max-width: 992px) {
         padding: 12px 60px 0 0;

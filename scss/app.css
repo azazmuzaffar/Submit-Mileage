@@ -426,8 +426,8 @@ main {
   display: flex;
 }
 .progress-value {
-  -webkit-animation: load 1s 1;
-          animation: load 1s 1;
+  -webkit-animation: load 5s 1;
+          animation: load 5s 1;
   border-radius: 100px;
   background: #fff;
   height: 32px;

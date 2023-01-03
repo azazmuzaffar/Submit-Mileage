@@ -506,45 +506,63 @@ main {
 /* ------- Progress bar ------- */
 /*-----------------------------*/
 
-.progress {
-    background: $orange;
-    justify-content: flex-start;
-    border-radius: 100px;
-    align-items: center;
-    position: relative;
-    padding: 0 4px;
-    display: none;
-    height: 40px;
-    width: 100%;
+.overall-progress {
+    padding: 25px;
+    background-color: $white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.0066);
+    border-radius: 8px;
 
-    &.show {
-        display: flex;
+    .progress-status {
+        margin-bottom: 12px;
+        font-size: 18px;
+        text-align: center;
+
+        span {
+            font-weight: 600;
+        }
     }
 
-    &-value {
-        animation: load 1s 1;
+    .progress {
+        background: $orange;
+        justify-content: flex-start;
         border-radius: 100px;
-        background: $white;
-        height: 32px;
-        color: $orange;
-        display: flex;
         align-items: center;
-        justify-content: center;
-        font-size: 14px;
-        font-weight: 600;
+        position: relative;
+        padding: 0 4px;
+        display: none;
+        height: 36px;
         width: 100%;
-    }
 
-    @keyframes load {
-        0% {
-            width: 0;
+        &.show {
+            display: flex;
         }
 
-        100% {
+        &-value {
+            animation: load 1s 1;
+            border-radius: 100px;
+            background: $white;
+            height: 28px;
+            color: $orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 600;
             width: 100%;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
         }
     }
 }
+
 
 /*-----------------------------*/
 /* --=---- Leaderboard -------- */

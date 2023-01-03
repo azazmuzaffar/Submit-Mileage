@@ -411,7 +411,21 @@ main {
 /*-----------------------------*/
 /* ------- Progress bar ------- */
 /*-----------------------------*/
-.progress {
+.overall-progress {
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.0066);
+  border-radius: 8px;
+}
+.overall-progress .progress-status {
+  margin-bottom: 12px;
+  font-size: 18px;
+  text-align: center;
+}
+.overall-progress .progress-status span {
+  font-weight: 600;
+}
+.overall-progress .progress {
   background: #f06400;
   justify-content: flex-start;
   border-radius: 100px;
@@ -419,18 +433,18 @@ main {
   position: relative;
   padding: 0 4px;
   display: none;
-  height: 40px;
+  height: 36px;
   width: 100%;
 }
-.progress.show {
+.overall-progress .progress.show {
   display: flex;
 }
-.progress-value {
+.overall-progress .progress-value {
   -webkit-animation: load 1s 1;
           animation: load 1s 1;
   border-radius: 100px;
   background: #fff;
-  height: 32px;
+  height: 28px;
   color: #f06400;
   display: flex;
   align-items: center;

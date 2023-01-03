@@ -37,6 +37,11 @@ span {
 table.table > :not(caption) > * > * {
   padding: 16px 40px;
 }
+@media screen and (max-width: 767px) {
+  table.table > :not(caption) > * > * {
+    padding: 16px 20px;
+  }
+}
 table.table > :not(:last-child) > :last-child > * {
   border-bottom-color: #505050;
 }
@@ -425,6 +430,11 @@ main {
 .overall-progress .progress-status span {
   font-weight: 600;
 }
+@media screen and (max-width: 992px) {
+  .overall-progress .progress-status {
+    font-size: 14px;
+  }
+}
 .overall-progress .progress {
   background: #f06400;
   justify-content: flex-start;
@@ -435,6 +445,11 @@ main {
   display: none;
   height: 36px;
   width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .overall-progress .progress {
+    height: 32px;
+  }
 }
 .overall-progress .progress.show {
   display: flex;
@@ -452,6 +467,11 @@ main {
   font-size: 14px;
   font-weight: 600;
   width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .overall-progress .progress-value {
+    height: 24px;
+  }
 }
 @-webkit-keyframes load {
   0% {

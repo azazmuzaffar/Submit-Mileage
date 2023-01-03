@@ -92,6 +92,10 @@ table {
     &.table {
         &>:not(caption)>*>* {
             padding: 16px 40px;
+
+            @media screen and (max-width: 767px) {
+                padding: 16px 20px;
+            }
         }
 
         &>:not(:last-child)>:last-child>* {
@@ -520,6 +524,10 @@ main {
         span {
             font-weight: 600;
         }
+
+        @media screen and (max-width: 992px) {
+            font-size: 14px;
+        }
     }
 
     .progress {
@@ -532,6 +540,10 @@ main {
         display: none;
         height: 36px;
         width: 100%;
+
+        @media screen and (max-width: 992px) {
+            height: 32px;
+        }
 
         &.show {
             display: flex;
@@ -549,6 +561,10 @@ main {
             font-size: 14px;
             font-weight: 600;
             width: 100%;
+
+            @media screen and (max-width: 992px) {
+                height: 24px;
+            }
         }
 
         @keyframes load {
